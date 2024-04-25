@@ -11,6 +11,8 @@ export const CardsHeading = styled(({...props}) => <SectionHeading {...props} />
 
 export const CardsDescription = styled(({ ...props }) => <SectionParagraph {...props} />)`
     margin: 0;
+    font-size: 14px;
+    font-weight: 500;
 `;
 
 export const CardsWrapper = styled(({ width, color, ...props }) => <div {...props} />)`
@@ -39,7 +41,6 @@ export const CardsImageContainer = styled(({ ...props }) => <div {...props} />)`
 `;
 
 export const CardsContentWrapper = styled(({ ...props }) => <div {...props} />)`
-    // margin: 0 20px;
 `;
 
 export const Cards = styled(({ ...props }) => <div {...props} />)`
