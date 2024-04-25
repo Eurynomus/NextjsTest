@@ -24,18 +24,18 @@ export const TextContainer = styled(({ ...props }) => <div {...props} />)`
 `;
 
 export const ImageContainer = styled(({ ...props }) => <div {...props} />)`
-  max-width: 500px;
+  max-width: 400px;
   max-height: 600px;
   width: 100%;
   height: 100%;
-  margin-left: 0;
+  margin-right: 60px;
 `;
 
 export const CardsContainer = styled(({ ...props }) => <div {...props} />)`
-  width: 50%;
+  // width: 100%;
 `;
 
 export const ImageCardsWrapper = styled(({ ...props }) => <div {...props} />)`
   display: flex;
-  width: 100%;
+  margin-top: 50px;
 `;

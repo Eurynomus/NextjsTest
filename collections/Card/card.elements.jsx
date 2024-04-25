@@ -16,8 +16,8 @@ export const CardsDescription = styled(({ ...props }) => <SectionParagraph {...p
 export const CardsWrapper = styled(({ width, color, ...props }) => <div {...props} />)`
     display: flex;
     align-items: center;
-    padding: 15px 0;
-    margin: 0;
+    padding: 15px 25px;
+    margin: 0 20px;
     transition: all .3s ease;
     border-radius: 8px;
     border: 2px solid transparent;
@@ -35,9 +35,13 @@ export const CardsWrapper = styled(({ width, color, ...props }) => <div {...prop
 `;
 
 export const CardsImageContainer = styled(({ ...props }) => <div {...props} />)`
-    width: 25%;
+    margin: 0 35px;
 `;
 
 export const CardsContentWrapper = styled(({ ...props }) => <div {...props} />)`
-    width: 70%;
+    // margin: 0 20px;
+`;
+
+export const Cards = styled(({ ...props }) => <div {...props} />)`
+    margin: 35px 0;
 `;

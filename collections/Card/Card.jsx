@@ -6,22 +6,25 @@ import {
     CardsContentWrapper,
     CardsImageContainer,
     CardsWrapper,
+    Cards
 } from "./card.elements";
 
-export const Card = ({ containerWidth, title, description, image, color }) => {
+export const Card = ({ width, title, description, image, color }) => {
     return (
-        <CardsWrapper width={containerWidth} color={color}>
+        <Cards>
+            <CardsWrapper width={width} color={color}>
 
-            <CardsImageContainer>
-                <Image src={image.src} alt="" width={image.width} height={image.height} />
-            </CardsImageContainer>
+                <CardsImageContainer>
+                    <Image src={image.src} alt="" width={image.width} height={image.height} />
+                </CardsImageContainer>
 
-            <CardsContentWrapper>
-                <CardsHeading>{title}</CardsHeading>
-                <CardsDescription>{description}</CardsDescription>
-            </CardsContentWrapper>
+                <CardsContentWrapper>
+                    <CardsHeading>{title}</CardsHeading>
+                    <CardsDescription>{description}</CardsDescription>
+                </CardsContentWrapper>
 
-        </CardsWrapper>
+            </CardsWrapper>
+        </Cards>
     )
 
 }

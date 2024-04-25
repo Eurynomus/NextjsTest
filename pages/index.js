@@ -3,32 +3,27 @@ import { Main } from "../sections";
 const mainProps = {
   title: "Managed agency selection",
   description: "Strengthen your onboarding process",
-  image: {
-    src: "/public/img/video.png",
-    alt: '',
-    height: 350,
-    width: 350
-  },
+  image: { src: "/img/video.png", alt: '', height: 350, width: 250 },
   agencys: [
     {
-      containerWidth: 70,
+      width: 59, //percentage
       title: "Brief",
-      description: "Complete brief writing or simple guidance on what to include, we,ve got you covered.",
-      image: { src: "/public/img/logo1.jpg", alt: "logo-1", width: 60, height: 60 },
+      description: "Complete brief writing or simple guidance on what to include, we've got you covered.",
+      image: { src: "/img/logo1.jpg", alt: "logo-1", width: 60, height: 60 },
       color: "#FAF9F9",
     },
     {
-      containerWidth: 73,
+      width: 63, //percentage
       title: "Search",
       description: "In-depth agency search covering; criteria matching, door knocking and due-dilligence vetting.",
-      image: { src: "/public/img/logo2.png", alt: "logo-2", width: 60, height: 60 },
+      image: { src: "/img/logo2.jpg", alt: "logo-2", width: 60, height: 60 },
       color: "#F5F4F4", 
     },
     {
-      containerWidth: 76,
+      width: 67, //percentage
       title: "Pitch",
-      description: "Comprehensive: pitch management, including camms, diary management and pitch hosting.",
-      image: { src: "/public/img/logo3.jpg", alt: "logo-3", width: 60, height: 60 },
+      description: "Comprehensive pitch management, including comms, diary management and pitch hosting.",
+      image: { src: "/img/logo3.png", alt: "logo-3", width: 60, height: 60 },
       color: "#EFEFEF",
     }
   ]
