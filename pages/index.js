@@ -1,11 +1,38 @@
-import { Hero } from "../sections";
+import { Main } from "../sections";
 
-const heroProps = {
-  image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
-  title: "Agency procurement, outsourced.",
-  description: "Start the process here",
-  ctaText: "Start",
-};
+const mainProps = {
+  title: "Managed agency selection",
+  description: "Strengthen your onboarding process",
+  image: {
+    src: "/public/img/video.png",
+    alt: '',
+    height: 350,
+    width: 350
+  },
+  agencys: [
+    {
+      containerWidth: 70,
+      title: "Brief",
+      description: "Complete brief writing or simple guidance on what to include, we,ve got you covered.",
+      image: { src: "/public/img/logo1.jpg", alt: "logo-1", width: 60, height: 60 },
+      color: "#FAF9F9",
+    },
+    {
+      containerWidth: 73,
+      title: "Search",
+      description: "In-depth agency search covering; criteria matching, door knocking and due-dilligence vetting.",
+      image: { src: "/public/img/logo2.png", alt: "logo-2", width: 60, height: 60 },
+      color: "#F5F4F4", 
+    },
+    {
+      containerWidth: 76,
+      title: "Pitch",
+      description: "Comprehensive: pitch management, including camms, diary management and pitch hosting.",
+      image: { src: "/public/img/logo3.jpg", alt: "logo-3", width: 60, height: 60 },
+      color: "#EFEFEF",
+    }
+  ]
+}
 
 export default function Home() {
   return (
@@ -19,8 +46,7 @@ export default function Home() {
         />
       </head>
       <div>
-        <Hero {...heroProps} />
-        {/** Other sections */}
+        <Main {...mainProps} />
       </div>
     </>
   );
