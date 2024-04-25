@@ -13,6 +13,7 @@ export const CardsDescription = styled(({ ...props }) => <SectionParagraph {...p
     margin: 0;
     font-size: 14px;
     font-weight: 500;
+    line-height: normal;
 `;
 
 export const CardsWrapper = styled(({ width, color, ...props }) => <div {...props} />)`
@@ -24,7 +25,7 @@ export const CardsWrapper = styled(({ width, color, ...props }) => <div {...prop
     border-radius: 8px;
     border: 2px solid transparent;
     background: ${({color}) => color};
-    width: ${({width}) => width}%;
+    width: ${({width}) => width}px;
 
     &:hover ${CardsHeading} {
         text-decoration: underline;
@@ -44,5 +45,5 @@ export const CardsContentWrapper = styled(({ ...props }) => <div {...props} />)`
 `;
 
 export const Cards = styled(({ ...props }) => <div {...props} />)`
-    margin: 35px 0;
+    margin: 20px 0;
 `;

@@ -5,9 +5,6 @@ export const Container = styled(({ height, ...props }) => <SectionContainer {...
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('/img/background.png');
-  background-size: contain;
-  background-repeat: no-repeat;
 `;
 
 export const Title = styled((props) => <SectionBigHeading {...props} />)`
@@ -28,8 +25,7 @@ export const TextContainer = styled(({ ...props }) => <div {...props} />)`
 `;
 
 export const ImageContainer = styled(({ ...props }) => <div {...props} />)`
-  max-width: 370px;
-  max-height: 550px;
+  max-width: 320px;
   width: 100%;
   height: 100%;
   margin-right: 60px;
@@ -41,5 +37,10 @@ export const CardsContainer = styled(({ ...props }) => <div {...props} />)`
 
 export const ImageCardsWrapper = styled(({ ...props }) => <div {...props} />)`
   display: flex;
+  justify-content: center;
   margin-top: 50px;
+  width: 100%;
+  background-image: url('/img/background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 `;

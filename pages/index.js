@@ -6,21 +6,21 @@ const mainProps = {
   image: { src: "/img/video.png", alt: '', height: 350, width: 250 },
   agencys: [
     {
-      width: 61, //percentage
+      width: 320,
       title: "Brief",
       description: <>Complete <b>brief writing or simple guidance</b> on what to include, we've got you covered.</>,
       image: { src: "/img/logo1.jpg", alt: "logo-1", width: 60, height: 60 },
       color: "#FAF9F9",
     },
     {
-      width: 64, //percentage
+      width: 340,
       title: "Search",
       description: <>In-depth agency search covering; <b>criteria matching,</b> door knocking and due-dilligence vetting.</>,
       image: { src: "/img/logo2.jpg", alt: "logo-2", width: 60, height: 60 },
       color: "#F5F4F4", 
     },
     {
-      width: 67, //percentage
+      width: 365,
       title: "Pitch",
       description: <>Comprehensive <b>pitch management</b>, including comms, diary management and pitch hosting.</>,
       image: { src: "/img/logo3.png", alt: "logo-3", width: 60, height: 60 },
