@@ -48,7 +48,7 @@ export const StyledSectionTinyHeading = styled(forwardRef((props, ref) => <h5 {.
 
 export const StyledSectionParagraph = styled((props) => <p {...props} />)`
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 13px;
   line-height: normal;
   font-weight: 500;
 `;

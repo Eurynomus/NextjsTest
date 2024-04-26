@@ -33,7 +33,8 @@ export const CardsWrapper = styled(({ width, color, ...props }) => <div {...prop
     }
 
     @media (max-width: 1024px) {
-        padding: 15px 25px 15px 15px;
+        padding: 15px 20px 15px 15px;
+        width: unset;
     }
 `;
 
@@ -56,5 +57,12 @@ export const Cards = styled(({ ...props }) => <div {...props} />)`
 
     @media (max-width: 1024px) {
         margin: 20px 30px;
+
+        &:nth-of-type(1) {
+            margin: 20px 60px 20px 30px;
+        }
+        &:nth-of-type(2) {
+            margin: 20px 45px 20px 30px;
+        }
     }
 `;

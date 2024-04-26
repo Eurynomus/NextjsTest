@@ -28,7 +28,7 @@ export const ImageContainer = styled(({ ...props }) => <div {...props} />)`
   margin-right: 60px;
 
   @media (max-width: 1024px) {
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
     max-width: 250px;
   }
 `;
@@ -49,5 +49,6 @@ export const ImageCardsWrapper = styled(({ ...props }) => <div {...props} />)`
 
   @media (max-width: 1024px) {
     flex-direction: column;
+    margin-top: 40px;
   }
 `;
