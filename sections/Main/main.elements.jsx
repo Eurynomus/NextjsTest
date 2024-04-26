@@ -2,20 +2,20 @@ import styled from "styled-components";
 import { SectionContainer, SectionBigHeading, SectionSubheading } from "~/components";
 
 export const Container = styled(({ height, ...props }) => <SectionContainer {...props} />)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
 
 export const Title = styled((props) => <SectionBigHeading {...props} />)`
   color: black;
   width: 100%;
   margin: 50px 0 0 0;
+
+  @media (max-width: 1024px) {
+    margin: 0;
+  }
 `;
 
 export const Description = styled((props) => <SectionSubheading {...props} />)`
   margin: 0;
-  font-weight: 400;
 `;
 
 export const TextContainer = styled(({ ...props }) => <div {...props} />)`
@@ -43,4 +43,8 @@ export const ImageCardsWrapper = styled(({ ...props }) => <div {...props} />)`
   background-image: url('/img/background.png');
   background-size: contain;
   background-repeat: no-repeat;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;

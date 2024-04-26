@@ -5,22 +5,18 @@ import { SectionHeading, SectionParagraph } from "~/components";
 export const CardsHeading = styled(({...props}) => <SectionHeading {...props} />)`
   font-size: 18px;
   font-weight: 700;
-  line-height: normal;
   margin: 0;
 `;
 
 export const CardsDescription = styled(({ ...props }) => <SectionParagraph {...props} />)`
     margin: 0;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
 `;
 
 export const CardsWrapper = styled(({ width, color, ...props }) => <div {...props} />)`
     display: flex;
     align-items: center;
     padding: 15px 25px;
-    margin: 0 20px;
+    margin: 0;
     transition: all .3s ease;
     border-radius: 8px;
     border: 2px solid transparent;
@@ -34,6 +30,10 @@ export const CardsWrapper = styled(({ width, color, ...props }) => <div {...prop
 
     &:hover {
         border: 2px solid #357ddb;
+    }
+
+    @media (max-width: 1024px) {
+        width: 100%;
     }
 `;
 

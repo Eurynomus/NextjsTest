@@ -17,7 +17,7 @@ const mainProps = {
       title: "Search",
       description: <>In-depth agency search covering; <b>criteria matching,</b> door knocking and due-dilligence vetting.</>,
       image: { src: "/img/logo2.jpg", alt: "logo-2", width: 60, height: 60 },
-      color: "#F5F4F4", 
+      color: "#F5F4F4",
     },
     {
       width: 365,
@@ -33,6 +33,7 @@ export default function Home() {
   return (
     <>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
